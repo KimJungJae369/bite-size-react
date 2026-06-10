@@ -7,6 +7,10 @@
         "/^git add \\.$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^git commit -m \"React 강의 학습 내용 업로드\"$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }
