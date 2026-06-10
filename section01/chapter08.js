@@ -5,6 +5,7 @@
     - 즉 null 또는 undefined이면 값이 할당되어 있는 값만 찾아내서 변수명에 항당하는 연산자
     - null또는 undefined이 아닌 값을 찾아낸다
     - 두 값이 null또는 undefined이 아닌 경우에는 첫번째 피연산자 값을 반환
+    -   
 */ 
 
 let var1;
