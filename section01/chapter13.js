@@ -1,7 +1,7 @@
 /*
     콜백함수
     - 자신이 아닌 다른 함수에 인수로써 전달된 함수를 의미 한다
-    - 콜백 : '뒷전, 나중에 실행되는'라는 뜻 
+    - 콜백 : '뒷전, 나중에 실행되는'라는 뜻  
 */
 
 // 1. 콜백함수
@@ -12,9 +12,9 @@ function main(value){
     // console.log('end');
 }
 
-function sub(){
-    // console.log('i am sub');
-}
+// function sub(){
+//     // console.log('i am sub');
+// }
 main(() => {
     // console.log('i am sub');
 });
