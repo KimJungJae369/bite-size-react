@@ -21,4 +21,16 @@
     package.json -> 스크립트 파일에 "test" 밑에 'start' 만들기 -> "node section03/index.js" 생성 -> 터미널에 'npm run start' 입력 -> 터미널에 결과 확인 
 */
 
-console.log('안녕');
+// console.log('안녕');
+
+// const {add, sub} = require('./math');
+
+console.log(add(1,2));
+console.log(sub(1,2));
+console.log(mul(3,2));
+
+// console.log(moduleDate);
+
+// es 모듈
+// import mul from './math.js'
+import mul, {add, sub} from './math.js'
