@@ -33,4 +33,4 @@ console.log(mul(3,2));
 
 // es 모듈
 // import mul from './math.js'
-import mul, {add, sub} from './math.js'
+// import mul, {add, sub} from './math.js'
