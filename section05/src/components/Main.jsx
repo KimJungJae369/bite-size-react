@@ -3,28 +3,30 @@
 // 2. 숫자, 문자열, 배열의 값만 렌더링 된다
 // 3. 모든 태그는 닫혀있어야 한다
 // 4. 최상위 태그는 반드시 하나여야만 한다
+import './Main.css';
 
 const Main = () => {
-  const number = 9;
-  const obj = {
-    a : '1'
+  const user = {
+    name : '홍길동',
+    islogin : false,
   }
-  return (
-    <div>
-      <h1>Main</h1>
-      <h2>{number % 2 === 0 ? '짝수' : '홀수'}</h2>
-      {10}
-      {number}
-      {[1,2,3]}
 
-      {/* 화면에 렌더링이 되지 않는 값 */}
-      {/* {true} */}
-      {/* {undefined} */}
-      {/* {null} */}
+  if(user.islogin === true){
+    return <button style={{
+      backgroundColor : 'red',
+      borderRadius : '5px',
+      border : 'none',
+      padding : '5px 10px',
+    }}>로그아웃</button>
+  }else{
+    return <button className="logout">로그인</button>
+  }
 
-      {obj.a}
-    </div>
-  )
+  // return (
+  //   <>
+  //     {user.islogin ? <button>로그아웃</button> : <button>로그인</button>}
+  //   </>
+  // )
 }
 
 export default Main
